@@ -1,10 +1,145 @@
 
-body { font-family: sans-serif; margin: 0; background: #f0f0f0; }
-header, footer { background: #fff; padding: 10px 20px; border-bottom: 1px solid #ccc; }
-nav a { margin-right: 20px; text-decoration: none; color: black; font-weight: bold; }
-.container { display: flex; padding: 20px; }
-.main { flex: 3; padding-right: 20px; }
-.sidebar { flex: 1; background: #eaeaea; padding: 10px; }
-.card { background: #fff; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; }
-footer a { margin-right: 10px; }
-img.cat { width: 100%; max-width: 200px; border-radius: 8px; }
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #fdfdfd;
+}
+
+header, footer {
+  background: #f0f0f0;
+  padding: 15px 20px;
+  transition: background-color 0.3 ease;
+}
+
+footer:hover {
+  background-color: antiquewhite;
+}
+
+header:hover {
+  background-color: antiquewhite;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3 ease, transform 0.3 ease;
+}
+
+nav a:hover {
+  color: #a67c00;
+  transform: scale(1.1);
+}
+
+main {
+  padding: 20px;
+}
+
+aside {
+  background: #f8f8f8;
+  padding: 10px;
+  margin: 20px;
+}
+
+footer a {
+  margin-right: 10px;
+}
+
+img.profile {
+  width: 30%;
+  max-width: 1920px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar {
+  flex: 1;
+  padding-left: 20px;
+  border-left: 2px solid #ddd;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+}
+
+div .main p {
+  margin: 2px 0;
+  line-height: 1.2;
+}
+
+.info-table {
+  display: flex;
+  gap: 20px;
+  max-width: 400px;
+  margin: 20px auto 0;
+  padding: 10px;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.info-table .column {
+  flex: 1;
+}
+
+.info-table ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.info-table li {
+  margin-bottom: 5px;
+}
+
+article {
+  background-color: #e5e4e2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  transition: box-shadow 0.3s ease; 
+}
+
+article:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+aside.info-table {
+  position: relative;
+  min-height: 200px; /* чтобы было больше места */
+}
+
+.ad-space {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b34a4a;
+  user-select: none;
+}
