@@ -322,24 +322,95 @@ article h2 {
 }
 
 /* Адаптивность */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+
   .container {
     flex-direction: column;
+    gap: 20px;
   }
-  
-  nav {
-    flex-wrap: wrap;
-    gap: 10px;
+
+  .main, .sidebar {
+    width: 100%;
   }
-  
+
   .info-table {
     flex-direction: column;
+    gap: 10px;
   }
-  
+
+  .resume-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nickname {
+    font-size: 1.4rem;
+  }
+
+  .dog-gallery, .meme-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .dog-photo img {
+    height: 250px;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .timeline {
+    padding-left: 10px;
+  }
+
+  .timeline-item {
+    padding-left: 10px;
+  }
+
+  .tip, .warning {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .nickname {
+    font-size: 1.2rem;
+  }
+
+  .profile {
+    max-width: 100%;
+  }
+
+  .tip, .warning {
+    padding: 10px;
+  }
+
+  .resume-container h2 {
+    font-size: 1.1rem;
+  }
+
   .ad-space {
-    position: relative;
-    top: auto;
-    left: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 0.85rem;
   }
 }
