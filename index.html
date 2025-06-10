@@ -2,37 +2,50 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Блог</title>
+  <title>Главная</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div class="wrapper">
 <header>
   <nav>
-    <a href="index.html">Блог</a>
-    <a href="projects.html">Проекты</a>
-    <a href="talks.html">Доклады</a>
+    <a href="index.html">Главная</a>
+    <a href="blog.html">Блог</a>
     <a href="resume.html">Резюме</a>
+    <a href="talks.html">Важное</a>
   </nav>
 </header>
+<div class="nickname">Liveenjuck</div>
 <div class="container">
   <div class="main">
-    <div class="card">
-      <p>Тут кратко обо мне, кто я такой по жизни вообще</p>
-      <p>А тут будет фото котика:</p>
-      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=400&h=300&q=80" alt="котик" class="cat" />
-    </div>
-    <div class="card">
-      <h3><strong>Стамбул и котики</strong> <br><small>16 марта 2023</small></h3>
-      <p>Вот я слетал в Стамбул и гладил местных ленивых котиков</p>
-    </div>
-    <div class="card">
-      <h3><strong>Пишем тесты на Jest</strong> <br><small>1 марта 2023</small></h3>
-      <p>Тесты разные нужны, тесты очень хороши…</p>
-    </div>
+    <h1>Привет, я Михаил!</h1>
+    <p><strong>Возраст:</strong> 18</p>
+    <p><strong>Образование:</strong> студент ЧелГУ</p>
+    <p><strong>Факультет:</strong> ИИТ</p>
+    <p><strong>Направление:</strong> Программная инженерия</p>
+    <p><strong>Хобби:</strong> программирование, шахматы, фотография</p>
+    <img src="./images/main-photo.jpg" alt="фото профиля" class="profile" />
   </div>
+  <aside class="info-table">
+  <div class="column">
+    <h3>Полезное</h3>
+      <ul>
+        <li><a href="https://t.me/liveenjuck">мой тг</a></li>
+        <li><a href="https://mail.ru/">моя почта</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Бесполезное</h3>
+    <ul>
+      <li><a href="https://steamcommunity.com/id/Liveenjuck">мой стим</a></li>
+      <li><a href="https://www.tiktok.com/@liveenjuck0">мой тт</a></li>
+    </ul>
+  </div>
+  <div class="ad-space">ЗДЕСЬ МОГЛА БЫ БЫТЬ ВАША РЕКЛАМА</div>
+</aside>
   <div class="sidebar">
-    <p><a href="#">Статья о тестах</a></p>
-    <p><a href="#">Статья о котиках</a></p>
+    <p><a href="memes.html">Ну тип мемчики...</a></p>
+    <p><a href="dog.html">ОГО это же фотки моей собачьк</a></p>
   </div>
 </div>
 <footer>
@@ -41,5 +54,6 @@
     <a href="https://vk.com/liveenjuck">VK</a>
     <br /><small>Ссылки на мои тгк, гитхаб, вк</small>
 </footer>
+</div>
 </body>
 </html>
