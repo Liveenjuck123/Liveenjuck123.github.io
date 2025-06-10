@@ -327,6 +327,10 @@ article h2 {
     padding: 0 10px;
   }
 
+  .ad-space {
+    display: none;
+  }
+
   .container {
     flex-direction: column;
     gap: 20px;
@@ -349,6 +353,10 @@ article h2 {
 @media (max-width: 768px) {
   header {
     padding: 10px 0;
+  }
+
+  .ad-space {
+    display: none;
   }
 
   nav {
@@ -410,7 +418,6 @@ article h2 {
   }
 
   .ad-space {
-    margin-top: 10px;
-    font-size: 0.85rem;
+    display: none;
   }
 }
